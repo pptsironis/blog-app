@@ -17,7 +17,7 @@
 };
 posts.forEach(function(post){ %>
     <h1><%=post.title%></h1>
-    <p><%=text_truncate(post.content)%></p>
+    <p><%=text_truncate(post.content)%> <a href="/posts/<%=post.title%>">ReadMore</a></p>
 <%}); %>
 
 <%- include("partials/footer") -%>
